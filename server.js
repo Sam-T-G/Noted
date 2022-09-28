@@ -23,6 +23,4 @@ app.get("/notes", function (req, res) {
 app.use(routes);
 
 // Sets up app to listen to requests
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
-});
+app.listen(PORT, () => console.log("Now listening"));
