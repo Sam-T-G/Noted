@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(routes);
 
 // GET function that sends user to AJAX page
 app.get("/", function (req, res) {
@@ -20,9 +21,5 @@ app.get("/notes", function (req, res) {
   res.sendFile(path.join(__dirname, "public/notes.html"));
 });
 
-app.use(routes);
-
 // Sets up app to listen to requests
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
-});
+app.listen(PORT, () => console.log("Now listening"));

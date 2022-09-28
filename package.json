@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
+    "fs": "^0.0.1-security",
     "path": "^0.12.7"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-T-G/Noted.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sam-T-G/Noted/issues"
+  },
+  "homepage": "https://github.com/Sam-T-G/Noted#readme"
 }
