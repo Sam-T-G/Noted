@@ -12,14 +12,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(routes);
 
-// GET function that sends user to AJAX page
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "public/index.html"));
-});
-
-app.get("/notes", function (req, res) {
-  res.sendFile(path.join(__dirname, "public/notes.html"));
-});
-
-// Sets up app to listen to requests
+// Sets up app to listen to requestsa
 app.listen(PORT, () => console.log("Now listening"));
